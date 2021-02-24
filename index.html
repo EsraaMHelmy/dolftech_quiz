@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dolf Technologies</title>
+    <html dir="rtl" lang="ar">
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4-rc2/foundation.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-icons.min.css">
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/> -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+
+<body>
+
+ <div id="flag">   
+	
+</div>
+	<!-- <noscript>
+		<p>This page requires a JavaScript-enabled browser.</p>
+	</noscript> -->
+
+	<!-- TOP AND TITLE BAR    -->
+	<div data-sticky-container>
+		<div class="small-12 sticky" data-sticky data-sticky-on="small">
+
+			<div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
+				<button class="menu-icon" type="button" data-toggle></button>
+				<!-- <div class="title-bar-title">Flogging a Dead Horse Quiz</div> -->
+			</div>
+
+			<div class="top-bar" id="main-menu">
+				
+				<div id="topBarRight" class="top-bar-right">
+					<ul class="menu accordion-menu vertical medium-horizontal" data-responsive-menu="accordion medium-dropdown">
+
+						<li>
+							<a id="myScores" href="#" data-toggle="myScoreDisplay">اعرض النتيجة</a>
+						</li>
+						<ul>
+							<li>
+
+							</li>
+						</ul>
+
+					</ul>
+				</div>
+			</div>
+
+			<!--  SCORE DISPLAY  -->
+			<div id="myScoreDisplay" class="row " data-toggler=".slideInMyScore">
+				<div id="showUserScores" class=""></div>
+			</div>
+
+		</div>
+	</div>
+
+	<!--end TOP AND TITLE BAR    -->
+
+	<!--  QUIZ    -->
+
+	<div class="row">
+		<div id="quizContainer" class="callout default-primary-color medium-8 small-12 columns">
+
+			<!-- message and start area  -->
+			<div class="row">
+				<div id="quizNotify" class="message small-11 columns">
+					<div class="">
+						<h4 id="message"></h4>
+					</div>
+					<div class="quizButton large-2">
+						<input type="button" id="startButton" class="buttons" value="ابدأ الاختبار" />
+
+					</div>
+
+					<div id="results" class="results"></div>
+					<div class="quizButtons ">
+
+					</div>
+				</div>
+			</div>
+
+			<!-- quiz question area  -->
+			<div class="row">
+				<!-- styling of radiobuttons in this container derives from: https://codepen.io/triss90/pen/XNEdRe-->
+				<div id="formContainer" class="main ">
+					<form id="form1" class="answer" action="" name="form1">
+					</form>
+				</div>
+			</div>
+
+			<!-- quiz buttons area  -->
+			<div class="row">
+				<div id="quizButtons" class="quizButtons large-10 medium-10 columns">
+					<div id="previous" class="quizButton large-2">
+						<input type="button" id="prevButton" class="buttons" value="السابق" />
+					</div>
+					<div id="next" class="quizButton large-2">
+						<input type="button" id="nextButton" class="buttons" value="التالى" />
+					</div>
+					<div id="score" class="quizButton large-2">
+						<input type="button" id="scoreButton" class="buttons" value="اعرض النتيجة" />
+					</div>
+
+				</div>
+			</div>
+
+			<!-- warning message area  -->
+			<div class="row large-10 medium-10 columns">
+				<!-- warning in case question is not answered  -->
+				<div class="warning">
+					<small id="warning" class=""></small>
+				</div>
+			</div>
+
+			<!-- progress bar area  -->
+			<div id="progressBar" class="">
+				<div class="progress" role="progressbar" tabindex="0" aria-valuenow="0" aria-valuemin="0" aria-valuetext="0 out of quizLength" aria-valuemax="3">
+					<span id="progressMeter" class="progress-meter" style="width: 25%">
+						<p id="progressMeterText" class="progress-meter-text"> </p>
+					</span>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- end QUIZ   -->
+	
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.4-rc2/foundation.min.js"></script>
+    <script src="js/script.js"></script>
+
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+</body>  
+      
+</html>
